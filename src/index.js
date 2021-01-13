@@ -78,8 +78,13 @@ const mapRoutes = (routes, pathToController, middlewareGenerals = []) => {
       handler = require(`${myPathToController}${controller}`).default;
       contr = new handler();
     }
+    let routeFn = (function(ctrl, mthd) {
+      return async (...args) => {
+        return ctrl[mthd].apply(ctrl, args);
+      };
+    })(contr, controllerMethod);
 
-    router.route(myPath)[requestMethod](middlewares, contr[controllerMethod]);
+    router.route(myPath)[requestMethod](middlewares, routeFn);
   });
 
   return router;
