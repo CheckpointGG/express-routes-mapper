@@ -32,6 +32,9 @@
   "homepage": "https://github.com/rudolfsonjunior/express-routes-mapper#readme",
   "author": "Lukas Aichbauer  <l.aichbauer@gmail.com> (https://github.com/aichbauer/)",
   "license": "MIT",
+  "engines": {
+    "node": "^10.0.0"
+  },
   "dependencies": {
     "@babel/core": "^7.1.2",
     "@babel/register": "^7.0.0",
