@@ -1,3 +1,25 @@
+<!-- GEEIQ-DOCS-BLOCK:START — added by the docs standardisation pass. Everything below the END marker is upstream's README, unmodified. -->
+> **GeeIQ fork notice.** This repository is a fork of the public npm package
+> [`aichbauer/express-routes-mapper`](https://github.com/aichbauer/express-routes-mapper).
+> The README below is **upstream's**, kept as its author wrote it, and it documents the
+> upstream library's API.
+>
+> GeeIQ-side documentation is in **[`docs/geeiq.md`](./docs/geeiq.md)**: what this fork
+> changes (one commit — the mapped handler is bound to its controller instance so `this`
+> works in class-based controllers), the publish story, and what in this org consumes it.
+>
+> Two corrections to the text below, recorded here rather than edited into upstream's body:
+>
+> - **The install instructions do not deliver this fork.** `npm i -S express-routes-mapper`
+>   and `yarn add express-routes-mapper` install *upstream's* published package from
+>   `registry.npmjs.org`. This fork is not published to any registry, under this name or any
+>   other, and `package.json` `main` points at `lib/index.js`, which is a Babel build output
+>   that git does not carry. See `docs/geeiq.md` → *Release*.
+> - **The build and coverage badges describe upstream, not this repository.** They point at
+>   Travis CI and Coveralls builds of `aichbauer/express-routes-mapper`. This repository has
+>   no GitHub Actions workflow at any ref and no CI of its own.
+<!-- GEEIQ-DOCS-BLOCK:END -->
+
 # express-routes-mapper
 
 [![Build Status](https://travis-ci.org/aichbauer/express-routes-mapper.svg?branch=master)](https://travis-ci.org/aichbauer/express-routes-mapper) [![Coverage Status](https://coveralls.io/repos/github/aichbauer/express-routes-mapper/badge.svg)](https://coveralls.io/github/aichbauer/express-routes-mapper)
